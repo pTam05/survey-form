@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+/* @author: parnavit
+This file provides styling for the surveyform.html page.
+It sets the background color, font, form border, button color,input box properties, etc.
+It is used along with w3-css stylesheet. */
+
+body {
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1 {
+    color: #FFCC33;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #006633;
+    box-shadow: 5px 10px #FFCC33;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  form {
+    border-width: 5px;
+    border-color: #006633;
+    border-style: solid;
+    box-shadow: 5px 10px #FFCC33;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    color: #006633;
+  }
+  
+  
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  
+  
+  input[type="email"],
+  input[type="number"],
+  input[type="text"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  
+  .button-primary {
+    margin: 20px auto;
+  }
+  
+  
+  .button.button-primary,
+  input[type="reset"].button-primary,
+  input[type="submit"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #006633;
+    border-color: #FFCC33;
+  }
+  
+  #gmulink {
+    text-align: right;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  
+  .error-label {
+    color: red;
+  }
+  
+  .alert .alert-danger div {
+      text-emphasis-color: red;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
