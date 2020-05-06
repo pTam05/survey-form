@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- DB configuration file. -->
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<!-- <property name="hibernate.connection.password">punivFall2019</property> -->
+		<property name="hibernate.connection.username">ptamhank</property>
+		<property name="hibernate.connection.password">ishijypo</property>
+		<!-- <property name="hibernate.connection.url">jdbc:mysql://gmudb1.crnmlxnnjfrz.us-east-1.rds.amazonaws.com:3306/swehw3_db</property> -->
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
+		<!-- Enables logging of all the generated SQL statements to the console -->
+		<property name="show_sql">true</property>
+		<mapping package="assignment.three" />
+		<mapping class="assignment.three.StudentBean" />
+	</session-factory>
+</hibernate-configuration>
